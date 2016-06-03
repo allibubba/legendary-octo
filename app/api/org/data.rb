@@ -1,9 +1,9 @@
 module Org
   class Data < Grape::API
     resource :org_data do
-      desc "List all Employee"
+      desc "List of all ORGs"
       get do
-        Org.all
+        OrgDatum.all
       end
     end
   end
