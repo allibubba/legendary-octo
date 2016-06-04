@@ -5,6 +5,19 @@ module Org
       get do
         OrgDatum.all
       end
+
+      desc "add new org"
+      params do
+        requires :name, type: String
+        requires :address, type: String
+      end
+      post do
+        OrgDatum.create!({
+          name: params[:name],
+          address: params[:address]
+        })
+      end
+      
     end
   end
 end
