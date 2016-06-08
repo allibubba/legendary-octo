@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :ths
   resources :sls_data
   resources :org_data
   mount API => '/'
