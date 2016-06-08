@@ -2,5 +2,6 @@ class API < Grape::API
   prefix 'api'
   version 'v1', using: :path
   mount Org::Data
-  mount Ths::Data
+  mount Th::Data
+  mount Sls::Data
 end
