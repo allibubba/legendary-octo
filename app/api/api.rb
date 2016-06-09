@@ -5,7 +5,7 @@ class API < Grape::API
   mount Sls::Data
   mount Person::Data
   add_swagger_documentation(
-    base_path: "/api",
+    # base_path: "/api",
     hide_documentation_path: true,
     api_version: 'v1',
     mount_path: '/docs'
