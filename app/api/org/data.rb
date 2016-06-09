@@ -3,7 +3,7 @@ module Org
     resource :org_data do
       desc "List of all ORGs"
       get do
-        OrgDatum.all
+        Structures::OrgDatum.all
       end
 
       desc "add new org"
@@ -12,7 +12,7 @@ module Org
         requires :address, type: String
       end
       post do
-        OrgDatum.create!({
+        Structures::OrgDatum.create!({
           name: params[:name],
           address: params[:address]
         })

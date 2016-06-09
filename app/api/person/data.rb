@@ -1,9 +1,9 @@
-module Sls
+module Person
   class Data < Grape::API
-    resource :sls_data do
+    resource :person_data do
       desc "List of all ORGs"
       get do
-        Structures::SlsDatum.all
+        Structures::Person.all
       end
     end
   end
