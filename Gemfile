@@ -9,6 +9,8 @@ gem 'sqlite3'
 gem 'puma', '~> 3.0'
 
 gem 'grape'
+gem 'grape-swagger'
+gem 'grape-swagger-rails'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.0'
