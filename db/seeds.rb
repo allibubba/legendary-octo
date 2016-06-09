@@ -5,3 +5,16 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+unless Rails.env == 'production'
+  print "Running Seed Task --------------------------------------------------------------\n"
+  load(Rails.root.join('db', 'seeds', 'destroy.rb'))
+
+
+  print "|-- Seeding\n"
+  load(Rails.root.join('db', 'seeds', 'orgs.rb'))
+
+else
+  print "For your protection, seeding is not allowed on Production.\n"
+end
+
