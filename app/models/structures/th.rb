@@ -11,4 +11,5 @@
 
 class Structures::Th < ApplicationRecord
   # belongs_to :sls_datum
+  self.table_name = "ths"
 end

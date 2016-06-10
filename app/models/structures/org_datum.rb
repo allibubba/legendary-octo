@@ -11,4 +11,5 @@
 
 class Structures::OrgDatum < ApplicationRecord
   has_many :sls_datum, :class_name => 'Structures::SlsDatum', :dependent => :destroy
+  self.table_name = "org_data"
 end

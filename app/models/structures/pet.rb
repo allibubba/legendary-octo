@@ -15,4 +15,5 @@
 
 class Structures::Pet < ApplicationRecord
   belongs_to :person
+  self.table_name = "pets"
 end
