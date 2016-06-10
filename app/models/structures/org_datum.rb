@@ -10,5 +10,5 @@
 #
 
 class Structures::OrgDatum < ApplicationRecord
-  has_many :sls_datum, :class_name => 'Structures::SlsDatum'
+  has_many :sls_datum, :class_name => 'Structures::SlsDatum', :dependent => :destroy
 end
